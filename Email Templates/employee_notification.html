@@ -3,54 +3,97 @@
     <head>
         <style>
             :root {
-                --primary-color: #2a9d8f;
-                --secondary-color: #264653;
-                --background-color: #f4f4f4;
-                --text-color: #333;
-                --font-family: Arial, sans-serif;
+                --primary-color: lab(49.83% 6.73 -51.89); /* Dark blue for headings */
+                --accent-color: #2a9d8f;  /* Teal for links or highlights */
+                --background-color: #ffffff; /* Clean white background */
+                --text-color: #333333;
+                --font-family: 'Segoe UI', Arial, sans-serif;
+                --line-height: 1.6;
+            }
+
+            h3 {
+                color: var(--primary-color);
+                font-family: var(--font-family);
+                border-bottom: 1px #ddd;
+                padding-bottom: 4px;
+                margin-top: 38px;
+                text-align: center;
+            }
+
+            a {
+                color: var(--accent-color);
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            ul {
+                padding-left: 20px;
+            }
+            li {
+                margin-bottom: 12px;
+            }
+            body {
+                background-color: var(--background-color);
+                font-family: var(--font-family);
+                color: var(--text-color);
+                padding: 20px;
+                max-width: 600px;
+                margin: auto;
+                line-height: var(--line-height);
+            }
+            hr {
+                border: none;
+                border-top: 1px solid #ddd;
+                margin: 40px 0;
             }
         </style>
     </head>
-
     <body>
-        <!-- Section One: Notification of Form -->
-        <!-- Subject: Action Required: Letter Available in Your ESS Portal -->
-        <p>Dear Mr Jacobs,</p>
+        <main>
+            <section>
+                <p>Dear Mr Jacobs,</p>
 
-        <p>
-            A form requiring your acknowledgment is now available on your Employee Self-Service (ESS) portal.            
-            <br>
-            Please log in to your account to review the document and confirm receipt at your earliest convenience.        
-        </p>
+                <p>
+                    A form requiring your acknowledgment is now available on your Employee Self-Service (ESS) portal.
+                    Please log in to your account to review the document and confirm receipt at your earliest convenience.
+                </p>
 
-        <p>
-            <strong>Access your portal:</strong><br>
-            <a href="https://employee.schoolschoice.co.uk" style="color: #2a9d8f;">https://employee.schoolschoice.co.uk</a>
-        </p>
+                <p>
+                    <strong>Access your portal:</strong><br>
+                    <a href="https://employee.schoolschoice.co.uk" class="portal-link">https://employee.schoolschoice.co.uk</a>
+                </p>
+            </section>
 
+            <hr>
 
-        <!-- Section Two: Frequently Asked Questions -->
-        <hr><h3>Frequently Asked Questions</h3>
+            <section>
+                <h3>Frequently Asked Questions</h3>
+                <ul>
+                    <li>
+                        <strong>How do I log in?</strong><br>
+                        Follow the link to the Employee Self-Service portal above and log in using your email address (<<email>>).
+                        If you are using your school credentials, you will use the same password associated with your school account.
+                        If you are not using school credentials and cannot remember your password, please contact Schools’ Choice Systems for assistance with resetting your login details.
+                    </li>
+                    <li>
+                        <strong>Where is the letter located?</strong><br>
+                        Once logged in, navigate to the “My Documents” or “Forms Awaiting Action” section.
+                        The letter will be listed there for your review and electronic acknowledgment.
+                    </li>
+                </ul>
 
-        <!-- Unordered list of frequently asked questions -->
-        <ul>
-            <li>
-                <strong>How do I log in?</strong><br>
-                Follow the link to the Employee Self-Service portal above and log in using your email address (<<email>>). If you are using your school credentials, you will use the same password associated with your school account. If you are not using school credentials and cannot remember your password, please contact Schools’ Choice Systems for assistance with resetting your login details.            <li>
-                <strong>Where is the letter located?</strong><br>
-                Once logged in, navigate to the “My Documents” or “Forms Awaiting Action” section. The letter will be listed there for your review and electronic acknowledgment.
-            </li>
-        </ul>
+                <p>If you experience any issues accessing your portal or locating the document, please contact HR or IT support for assistance.</p>
+            </section>
 
-        <p>If you experience any issues accessing your portal or locating the document, please contact HR or IT support for assistance.</p>
+            <footer>
+                <p>Best regards,<br>
+                Organisation Name<br>
+                Educational Institution</p>
 
-        <!-- Footer -->
-        <br>
-        <p> Best regards,<br>
-            Organisation Name<br>
-            Educational Institution
-        </p>
-
-        <p>Issued by Schools’ Choice, 2025.</p>
+                <p><em>Issued by Schools’ Choice, 2025.</em></p>
+                <img src="https://images.squarespace-cdn.com/content/v1/6400c23d9541005b4034bc22/22d64ce9-0cfd-4cb5-9f3a-039b538b6e28/Schools'+Choice+Logo+PotVG.png?format=1500w" alt="Schools’ Choice Logo" style="max-width: 150px; margin-top: 10px;">
+            </footer>
+        </main>
     </body>
 </html>
