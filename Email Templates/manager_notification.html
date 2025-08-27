@@ -47,6 +47,15 @@
                 border-top: 1px solid #ddd;
                 margin: 40px 0;
             }
+            .preview {
+                background-color: #eef6fc;
+                padding: 15px;
+                border-radius: 6px;
+                margin-bottom: 20px;
+            }
+            .preview p {
+            margin: 8px 0;
+            }
         </style>
     </head>
     <body>
@@ -55,9 +64,14 @@
                 <p>Dear <<!title>> <<!surname>>,</p>
 
                 <p>
-                    A form requiring your acknowledgment is now available on your Employee Self-Service (ESS) portal.
-                    Please log in to your account to review the document and confirm receipt at your earliest convenience.
+                    This is a notice to inform you that [Employee Name] has responded to the form titled "[Form Title]" via the Employee Self-Service (ESS) portal.
                 </p>
+
+                <div class="preview">
+                    <p><strong>Employee Name:</strong> [Employee Full Name]</p>
+                    <p><strong>Email Address:</strong> [employee.name@domain.com]</p>
+                    <p><strong>Response Status:</strong> [Response]</p>
+                </div>
 
                 <p>
                     <strong>Access your portal:</strong><br>
